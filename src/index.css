@@ -1,0 +1,120 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.kanban-board {
+  height: 100vh;
+  width: 100vw;
+  overflow-x: auto;
+  padding: 40px;
+  display: flex;
+}
+
+.task-colom {
+  width: 25%;
+  min-width: 25%;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+.task {
+  border: 1px solid #e5e1e1;
+  border-radius: 5px;
+  padding: 15px;
+  margin: 10px 0;
+  cursor: grab;
+}
+
+.colom-head {
+  margin-bottom: 15px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.priority {
+  color: white;
+  font-size: 11px;
+  padding: 4px;
+  font-weight: 700;
+  display: inline;
+  border-radius: 5px;
+}
+
+.task-id {
+  font-size: 11px;
+  padding: 3px;
+  display: inline;
+  border-radius: 5px;
+  margin-left: 10px;
+  font-weight: 600;
+  color: #919191;
+}
+
+.tag {
+  color: #2323dbc2;
+}
+
+.user-avatar {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+  margin-left: auto;
+  border-radius: 50%;
+}
+
+.task-detail {
+  display: flex;
+  align-items: center;
+  margin-bottom: 7px;
+}
+
+.time-stamp {
+  margin-left: auto;
+  font-size: 13px;
+}
+
+.task-name {
+  font-size: 17px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.count-details {
+  font-size: 13px;
+  font-weight: 500;
+  margin: 0 10px;
+}
+
+.tags-wrapper {
+  margin-bottom: 20px;
+}
+
+.task-wrapper {
+  flex: 1;
+  overflow-y: auto;
+}
+
+.task * {
+  pointer-events: none;
+}
